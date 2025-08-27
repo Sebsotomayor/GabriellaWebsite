@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+
+    <!-- NAME OF WEBSITE RIGHT HERE!!!!!-->
+    <title> Sebastian Sotomayor Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            
+                <!-- CHANGE THE LOGO THAT LEADS TO HOME MENU LATER-->
+
+            <a href="index.html"><img src="images/SebLogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="resume.html">RESUME</a></li>
+                 
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Personal Website</h1>
+   
+    </section>
+
+    <!-- CONTENT -->
+
+
+   <!-- <section class="course">
+
+     <h1>Personal Website</h1> 
+
+</section> -->
+
+ <section class="course2">
+
+     <div class="row2">
+        <h3>Overview:</h3>
+        <p>
+            This website serves as a personal showcase of my projects and experiences,
+             created entirely using HTML, CSS, and VSCode as my IDE. My goal was to design
+              a platform that captures my journey and accomplishments, and I successfully
+               brought this vision to life while learning the intricacies of web development with HTML and CSS.
+        </p>
+
+     </div>
+     
+     <div class="row2">
+         <h3>Process:</h3>
+           <p>
+            When I first started creating my personal website, HTML and CSS were entirely new to me.
+             To learn, I immersed myself in tutorials and practiced coding in VSCode simultaneously.
+              The process began with building the homepage, which proved the most challenging due to
+               its complexity. I set up the navigation menu, selected the perfect font, developed a
+                JavaScript toggle menu for the mobile version, and designed the overall style using CSS.
+                <br><br>
+            Next, I tackled the "About Me" section, where I learned how to create and format columns
+             to enhance the layout of my webpage. By the time I reached the "Portfolio" section, I felt
+              confident working with both HTML and CSS. This page followed a similar structure to the
+               "About Me" section but utilized three columns instead of two for a dynamic presentation of my work.
+               <br><br>
+            Finally, I created a dedicated webpage for my resume. To ensure it could be viewed and downloaded without
+             sacrificing quality, I embedded it using an inline iframe. Once the design and content were complete,
+              I successfully published the site online. This project not only allowed me to develop a strong foundation
+               in HTML and CSS, but also gave me the confidence to create functional and visually appealing websites.
+           </p>
+            
+             
+
+     </div>
+
+     <div class="row">
+        <div class="about-col">
+            <h3>
+                HTML Code
+            </h3>
+            <p>
+                This is a portion of the HTML code that is used for the home page of my website.
+            </p>
+            <img src="images/htmlss.png">
+            
+        </div>
+        <div class="about-col">
+            <h3>
+                CSS Code
+            </h3>
+            <p>
+                This is a portion of the CSS code that is used to format the header of my website.
+            </p>
+            <img src="images/cssss.png">
+            
+        </div>
+      </div>
+
+     
+    <section class="course2">
+   
+        
+            <div class="center-button">
+
+                
+
+                
+
+                <a href="portfolio.html" class="hero-btn red-btn">BACK TO PORTFOLIO</a>
+             </div>
+            
+
+
+        </div>
+       </section>
+     
+     
+     
+     
+     
+    
+
+
+
+
+        
+
+     
+
+
+
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+ 
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+
+    </script>
+
+
+</body>
+</html>

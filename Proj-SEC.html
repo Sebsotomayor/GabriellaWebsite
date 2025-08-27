@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+
+    <!-- NAME OF WEBSITE RIGHT HERE!!!!!-->
+    <title> Sebastian Sotomayor Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            
+                <!-- CHANGE THE LOGO THAT LEADS TO HOME MENU LATER-->
+
+            <a href="index.html"><img src="images/SebLogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="resume.html">RESUME</a></li>
+                 
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Projects</h1>
+   
+    </section>
+
+    <!-- CONTENT -->
+
+
+   <section class="course">
+    <h1>IEEE SoutheastCon 2025 Student Hardware Competition</h1>
+</section>
+ <section class="course2">
+
+<!-- RECOMMENT IF APPROVED!!! -->
+
+    <!-- <div class="middlewords">
+        <h3>Overview:</h3>
+        <p>As part of the IEEE SoutheastCon team at UCF, I contribute to the Electrical Team,
+             focusing on designing and implementing power systems for our autonomous robot. 
+             The robot must navigate, collect gems, and deposit them into a container, 
+             and our goal is to ensure the robot's components—such as the wheels and 
+             crane—receive stable and efficient power. We've researched and implemented 
+             circuits like buck converters, filters, and voltage dividers to power the robot's 
+             various parts. This project showcases my skills in power electronics, circuit design, 
+             and contributing to an interdisciplinary team to solve complex engineering challenges.</p>
+    </div> -->
+
+     <div class="middlewords">
+         <h3>Overview:</h3>
+         <p>
+                The IEEE SoutheastCon Hardware Competition is a student-centered 
+                program focused on giving college students a unique and exciting 
+                learning opportunity with robotics. Each year, teams take on a 
+                new game where they design, build, test, and program a fully 
+                Autonomous Robot to perform a series of tasks.
+                This year, the objective is to create a fully autonomous robot
+                that is capable of moving, locating, pick up objects, and place 
+                those objects at a specified location    </p>
+
+     </div>
+     
+     <div class="middlewords">
+         <h3>Prompt:</h3>
+           <p>
+            The year is 2047. After GRID deflected asteroids from comet 2047-5-L1, valuable materials—Geodinium
+             and Nebulite—were discovered within them. Your rover team has been tasked with collecting these rare
+              Astral Materials before the asteroids drift back into space forever.
+
+            You have T-3 minutes to gather as much as possible, load them into cosmic shipping containers, and deliver
+             them to the designated rendezvous pad. Telemetry reports also hint at a mysterious cave nearby.
+        
+            The materials your rover collects will pave the way for groundbreaking new technologies, shaping the future of humanity!
+           </p>
+     </div>
+
+     <div class="middlewords">
+        <h3>
+            Progress so far:
+        </h3>
+
+        <p>
+            I am part of the Electrical Team for this project, responsible for powering 
+            the autonomous robot and its various components. At the start of the semester, 
+            we practiced using the circuit simulation tool <i>LTspice</i> to strengthen our skills. 
+            As a team, we have conducted research on circuit elements such as buck converters 
+            and voltage dividers, which will be implemented into the robot's design. Additionally, 
+            we have tested components from last year's robot to assess their functionality and 
+            determine whether they can be reused.
+        </p>
+
+     </div>
+    <section class="course2">
+   
+        
+            <div class="center-button">
+                <!-- Remove line below when project is completed and page is fully updated-->
+                <p style="color: red;">This project is ongoing </p>
+
+                <br><br><br>
+
+                <a href="portfolio.html" class="hero-btn red-btn">BACK TO PORTFOLIO</a>
+             </div>
+            
+
+
+        </div>
+       </section>
+     
+     
+     
+     
+     
+    
+
+
+
+
+        
+
+     
+
+
+
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+ 
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+
+    </script>
+
+
+</body>
+</html>

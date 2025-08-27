@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+
+    <!-- NAME OF WEBSITE RIGHT HERE!!!!!-->
+    <title> Sebastian Sotomayor Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            
+                <!-- CHANGE THE LOGO THAT LEADS TO HOME MENU LATER-->
+
+            <a href="index.html"><img src="images/SebLogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="resume.html">RESUME</a></li>
+                 
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Projects</h1>
+   
+    </section>
+
+    <!-- CONTENT? -->
+   <section class="course">
+ 
+
+      <div class="middlewords">
+        <h3>Overview:</h3>
+        <p> As part of an assignment for Computer Science 1, this project involved an experimental study
+             of six sorting algorithms—Selection Sort, Bubble Sort, Insertion Sort, Merge Sort, Merge-Insertion Sort,
+              and Quick Sort. The purpose of the experiment was to compare the execution times of these algorithms and
+               understand how their performance scales with increasing data sizes.
+               
+            Implemented in C, the program generates random datasets, measures the execution time of each algorithm,
+             and records the results. The findings are then visualized in an Excel-based plot,
+              illustrating the relationship between data size, algorithm complexity, and execution time.
+               This project highlights my skills in algorithm analysis, performance evaluation, and data visualization.</p>
+
+      </div>
+
+        <div class="middlewords">
+            <h3>Methodology:</h3>
+            <p>
+                Arrays of predetermined sizes were initialized with 
+                random integers using a random number generator. 
+                To ensure fair comparisons, the original array was 
+                copied into a temporary array before each sorting 
+                algorithm was applied. This approach guaranteed 
+                identical initial conditions for all algorithms. 
+                Each algorithm was then executed on the temporary 
+                array, and its execution time was recorded. 
+                The data was systematically stored and later 
+                exported to Excel for visualization. Using Excel, 
+                 the execution times were plotted against array 
+                sizes to analyze performance trends and 
+                highlight differences in efficiency among 
+                the algorithms.
+            </p>
+
+        </div>
+
+    
+    
+        <div class="row">
+            <div class="sorting-col">
+                <h3>Bubble Sort Sorting Algorithm</h3>
+                <img src="images/bubble-sort.png">
+            </div>
+       
+        
+            <div class="sorting-col">
+                <h3>Insertion Sort Sorting Algorithm</h3>
+                <img src="images/insertion-sort.png">
+            </div>
+       
+        
+            <div class="sorting-col">
+                <h3>Merge Sort Sorting Algorithm</h3>
+                <img src="images/merge-sort.png">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="sorting-col">
+                <h3> Quick Sort Sorting Algorithm</h3>
+                <img src="images/quick-sort.png">
+            </div>
+       
+        
+            <div class="sorting-col">
+                <h3>Merge-Insertion Sort Sorting Algorithm</h3>
+                <img src="images/mergeinsertion-sort.png">
+            </div>
+       
+        
+            <div class="sorting-col">
+                <h3>Selection Sort Sorting Algorithm</h3>
+                <img src="images/senection-sort.png">
+            </div>
+        </div>
+
+     </section>
+     <section class="course2">
+        <div class="middlewords">
+            <h3>Results:</h3>
+            <p>
+                The execution times (in milliseconds) for 
+                the sorting algorithms are summarized 
+                in the table below: 
+            </p>
+
+        </div>
+   
+      <div class="row">
+        <div class="about-col">
+            <img src="images/excel-sort1.png">
+            
+        </div>
+        <div class="about-col">
+            <img src="images/excel-sort2.png">
+            
+        </div>
+      </div>
+
+       </div>
+    </section>
+
+    <section class="course2">
+        <div class="middlewords">
+            <h3>Observations:</h3>
+            <p>
+                Bubble Sort displayed consistently poor 
+                performance, confirming its inefficiency 
+                for large datasets. Selection Sort, while 
+                slightly faster than Bubble Sort, remained 
+                impractical for large-scale applications due 
+                to its  complexity. Insertion Sort performed 
+                well for smaller datasets but exhibited slower 
+                execution times as array sizes increased. 
+                Merge Sort and Quick Sort both excelled with 
+                large datasets, reflecting their  complexity 
+                and efficiency. Merge-Insertion Sort proved 
+                to be a versatile algorithm, effectively 
+                leveraging Merge Sort for larger arrays while 
+                utilizing Insertion Sort for smaller subarrays
+                 to optimize overall performance.
+            </p>
+
+        </div>
+
+        <div class="middlewords">
+            <h3>
+                Conclusion:
+            </h3>
+
+            <p>
+                This project effectively demonstrated the varying efficiencies 
+                of sorting algorithms and validated theoretical predictions about
+                 their time complexities. Merge Sort, Quick Sort, and the hybrid
+                  Merge-Insertion Sort emerged as the most efficient algorithms 
+                  for handling large datasets. Conversely, Bubble Sort, Selection Sort, 
+                  and Insertion Sort were more suitable for smaller datasets or 
+                  educational purposes. The project highlighted the critical role 
+                  of algorithm selection in optimizing performance and underscored 
+                  the importance of understanding computational time complexity in 
+                  real-world applications.
+            </p>
+            <p>
+              
+            </p>
+            
+        </div>
+
+     
+            
+     
+      
+            <div class="center-button">
+                
+                <a href="portfolio.html" class="hero-btn red-btn">BACK TO PORTFOLIO</a>
+             </div>
+            
+
+
+        </div>
+       </section>
+     
+     
+     
+     
+     
+    
+
+
+
+
+        
+
+     
+
+
+
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+ 
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+
+    </script>
+
+
+</body>
+</html>
