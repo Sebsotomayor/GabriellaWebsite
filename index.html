@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Title of web page-->
     <title>Home</title>
 
-    <!-- Links document to CSS, icons, and font -->
+    <!-- CSS, fonts & icons -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,12 +15,10 @@
 </head>
 <body>
 
-
-<!-- Header of web page -->
-
+    <!-- Header -->
     <section class="header">
         <nav>
-            <a href="index.html"><img src="images/Flag_of_Colombia.svg.webp"></a>
+            <a href="index.html"><img src="images/Flag_of_Colombia.svg.webp" alt="Flag of Colombia"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -33,33 +31,15 @@
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
-
-        <!-- Home Page-->
-    <div class="text-box">
-        <h1>Gabriella Cortes-Alban</h1>
-        <p>
-            Holaa, me llamo Gaby!!!
-        </p>
-        <a href="about.html" class="hero-btn">Learn more about me!</a>
-    </div>
-
-
+        <!-- Home Page -->
+        <div class="text-box">
+            <h1>Gabriella Cortes-Alban</h1>
+            <p>Holaa, me llamo Gaby!!!</p>
+            <a href="about.html" class="hero-btn">Learn more about me!</a>
+        </div>
     </section>
-   
-    <!-- JavaScript for Toggle Menu -->
-    <script>
- 
-        var navLinks = document.getElementById("navLinks");
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
 
-        function hideMenu(){
-            navLinks.style.right = "-200px"
-        }
-
-    </script>
-
-
+    <!-- Scripts at bottom for performance -->
+    <script src="functions.js"></script>
 </body>
 </html>

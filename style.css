@@ -110,8 +110,7 @@ nav .fa{
 }
 
 /* SIDE DISPLAY IF SMALL SCREEN*/
-
-@media(max-width: 1000px){
+/* @media(max-width: 1000px){
 
     .text-box h1{
         font-size: 50px;
@@ -140,6 +139,61 @@ nav .fa{
     .nav-links ul{
         padding: 30px;
     }
+} */
+
+/* EXTRA SMALL SCREENS (phones ≤600px) */
+@media(max-width: 1000px){
+        .text-box h1{
+        font-size: 30px;
+    }
+    .text-box p{
+        font-size: 20px;
+    }
+    .about-col h1{
+        font-size: 60px;
+    }
+    .about-col h4{
+        font-size: 25px;
+    }
+    .hero-btn{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background:#fc7651;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        right: 100%;
+        text-align: right;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 50px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .nav-links ul li{
+        text-align: center;
+        font-size:50px;
+        padding: 30px;
+    }
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font: 13px;
+}
+
 }
 
 .course{
@@ -228,7 +282,15 @@ BELOW IS THE HEADER BACKGROUND!!!
     margin-top: 100px;
 
 }
-
+@media(max-width: 1000px){
+    .sub-header{
+        height: 25vh;
+    }
+    
+    .sub-header h1{
+        font-size: 70px;
+    }
+}
 .about-us{
     width: 80%;
     margin: auto;
