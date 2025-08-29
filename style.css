@@ -14,7 +14,7 @@ i, em {
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(32, 26, 63, 0.647),rgba(59, 65, 37, 0.548)),url(images/EmbSys.webp);
+    background-image: linear-gradient(rgba(32, 26, 63, 0.647),rgba(59, 65, 37, 0.548)),url(images/Flag_of_Colombia.svg.webp);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -148,10 +148,10 @@ nav .fa{
 /* EXTRA SMALL SCREENS (phones ≤600px) */
 @media(max-width: 1000px){
         .text-box h1{
-        font-size: 30px;
+        font-size: 60px;
     }
     .text-box p{
-        font-size: 20px;
+        font-size: 40px;
     }
     .about-col h1{
         font-size: 60px;
@@ -221,7 +221,7 @@ p{
     padding: 10px;
     
 }
-.row{
+.portfolio-row{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
@@ -252,24 +252,6 @@ p{
 }
 
  /* CHANGING THE BOXES IN THE PORTFOLIO SECTION */
-.course-col{
-    flex-basis: 31%; /* Change the spacing of the boxes (Use 31% for three boxes)*/
-    background: #defbffd0;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-}
-
-h3{
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
-
-.course-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
-}
 
 @media(max-width: 1000px){
     .row{
@@ -376,7 +358,35 @@ BELOW IS THE HEADER BACKGROUND!!!
     /* height: 50%; */
     width: 50%;
 }
+ /* CHANGING THE BOXES IN THE PORTFOLIO SECTION */
+.course-col{
+    flex-basis: 31%; /* Change the spacing of the boxes (Use 31% for three boxes)*/
+    background: #64eafc3b;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
 
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive columns */
+  gap: 20px; /* space between boxes */
+  justify-items: center; /* center smaller items */
+}
+
+
+
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
 .resume-col{
     flex-basis: 100%; /* Change the spacing of the boxes (Use 31% for three boxes)*/
     background: #defbffd0;
@@ -401,8 +411,9 @@ h3{
 }
 
 @media(max-width: 1000px){
-    .row{
+    .portfolio-row{
         flex-direction: column;
+        margin-bottom: 1px;
     }
 }
 
