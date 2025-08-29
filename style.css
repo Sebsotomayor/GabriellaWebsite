@@ -297,11 +297,24 @@ BELOW IS THE HEADER BACKGROUND!!!
 }
 @media(max-width: 1000px){
     .sub-header{
-        height: 50;
+        height: 30vh;
     }
     
     .sub-header h1{
-        font-size: 40px;
+        margin-top: 0;
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 600px){
+    .sub-header{
+        height: 20vh;
+    }
+    
+    .sub-header h1{
+        margin-top: 0;
+
+        font-size: 30px;
     }
 }
 .about-us{
@@ -357,6 +370,7 @@ BELOW IS THE HEADER BACKGROUND!!!
 .red-btn:hover{
     color: #fff;
 }
+
 
 .course-col img{
     /* height: 50%; */
