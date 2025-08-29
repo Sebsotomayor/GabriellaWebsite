@@ -6,6 +6,10 @@
     font-style: normal;
 }
 
+i, em {
+    font-style: italic;
+}
+
   
 .header{
     min-height: 100vh;
