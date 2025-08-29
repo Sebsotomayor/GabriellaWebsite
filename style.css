@@ -370,8 +370,8 @@ BELOW IS THE HEADER BACKGROUND!!!
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive columns */
-  gap: 20px; /* space between boxes */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* responsive columns */
+  gap: 50px; /* space between boxes */
   justify-items: center; /* center smaller items */
 }
 
