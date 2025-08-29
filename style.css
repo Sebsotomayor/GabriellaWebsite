@@ -176,7 +176,7 @@ nav .fa{
         display: block;
         color: #fff;
         margin: 10px;
-        font-size: 50px;
+        font-size: 40px;
         cursor: pointer;
     }
     .nav-links ul{
@@ -184,7 +184,7 @@ nav .fa{
     }
     .nav-links ul li{
         text-align: center;
-        font-size:50px;
+        font-size:40px;
         padding: 30px;
     }
 
@@ -288,16 +288,16 @@ BELOW IS THE HEADER BACKGROUND!!!
 }
 
 .sub-header h1{
-    margin-top: 10px;
+    margin-top: 0px;
 
 }
 @media(max-width: 1000px){
     .sub-header{
-        height: 25vh;
+        height: 50;
     }
     
     .sub-header h1{
-        font-size: 70px;
+        font-size: 40px;
     }
 }
 .about-us{
