@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriella Cortes-Alban Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        .header {
+            min-height: 100vh;
+            width: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+            position: relative;
+        }
+        
+        nav {
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        nav img {
+            width: 60px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        
+        nav img:hover {
+            transform: scale(1.1);
+        }
+        
+        .nav-links {
+            flex: 1;
+            text-align: right;
+        }
+        
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        
+        .nav-links ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links ul li a:hover {
+            color: #ff6b6b;
+        }
+        
+        .nav-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #ff6b6b;
+            display: block;
+            margin: auto;
+            transition: width 0.3s;
+        }
+        
+        .nav-links ul li:hover::after {
+            width: 100%;
+        }
+        
+        /* Text Box */
+        .text-box {
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        .text-box h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        
+        .text-box p {
+            margin: 20px 0 30px;
+            font-size: 20px;
+            color: #fff;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .hero-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 2px solid #ff6b6b;
+            padding: 12px 34px;
+            font-size: 16px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: all 0.3s;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        
+        .hero-btn:hover {
+            background: #ff6b6b;
+            color: #fff;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Features Section */
+        .features {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+        }
+        
+        .features h1 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .features p {
+            color: #777;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .row {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .features-col {
+            flex-basis: 31%;
+            background: #fff3f3;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            padding: 20px 12px;
+            transition: 0.5s;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .features-col:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .features-col h3 {
+            text-align: center;
+            font-weight: 600;
+            margin: 10px 0;
+            color: #ff6b6b;
+        }
+        
+        /* Footer */
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        
+        .icons {
+            color: #ff6b6b;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            font-size: 24px;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 700px) {
+            .text-box h1 {
+                font-size: 24px;
+            }
+            
+            .nav-links ul li {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                background: #ff6b6b;
+                height: 100vh;
+                width: 200px;
+                top: 0;
+                right: -200px;
+                text-align: left;
+                z-index: 2;
+                transition: right 0.5s;
+            }
+            
+            .nav-links ul {
+                padding: 30px;
+            }
+            
+            .row {
+                flex-direction: column;
+            }
+            
+            .features-col {
+                margin-bottom: 30px;
+            }
+        }
+        
+        /* Mobile Menu Icons */
+        .fa-bars, .fa-times {
+            color: white;
+            font-size: 22px;
+            cursor: pointer;
+            display: none;
+        }
+        
+        @media (max-width: 700px) {
+            .fa-bars, .fa-times {
+                display: block;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Profile Image"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-- Home Page -->
+        <div class="text-box">
+            <h1>Gabriella Cortes-Alban</h1>
+            <p>¡Holaa, me llamo Gaby!!!<br>Bienvenidos a mi portfolio creativo</p>
+            <a href="about.html" class="hero-btn">Learn more about me!</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h1>What I Offer</h1>
+        <p>I specialize in creative solutions with a focus on user experience and visual design.</p>
+        
+        <div class="row">
+            <div class="features-col">
+                <h3>Web Design</h3>
+                <p>Creating beautiful, responsive websites that provide exceptional user experiences across all devices and platforms.</p>
+            </div>
+            <div class="features-col">
+                <h3>UI/UX Design</h3>
+                <p>Designing intuitive interfaces with a focus on usability and aesthetics to enhance user satisfaction and engagement.</p>
+            </div>
+            <div class="features-col">
+                <h3>Brand Identity</h3>
+                <p>Developing cohesive brand identities that communicate your values and resonate with your target audience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>Connect With Me</h4>
+        <div class="icons">
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-behance"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <p>Made with <i class="fas fa-heart" style="color: #ff6b6b;"></i> by Gabriella Cortes-Alban</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
