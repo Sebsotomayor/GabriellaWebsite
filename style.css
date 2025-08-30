@@ -26,7 +26,7 @@ nav{
     align-items: center;
 }
 nav img{
-    width: 150px;
+    width: 100px;
 }
 .nav-links{
     flex: 1;
@@ -148,10 +148,10 @@ nav .fa{
 /* EXTRA SMALL SCREENS (phones ≤600px) */
 @media(max-width: 1000px){
         .text-box h1{
-        font-size: 60px;
+        font-size: 45px;
     }
     .text-box p{
-        font-size: 40px;
+        font-size: 25px;
     }
     .about-col h1{
         font-size: 60px;
@@ -180,7 +180,7 @@ nav .fa{
         display: block;
         color: #fff;
         margin: 10px;
-        font-size: 40px;
+        font-size: 30px;
         cursor: pointer;
     }
     .nav-links ul{
@@ -192,11 +192,11 @@ nav .fa{
         padding: 30px;
     }
 
-.nav-links ul li a{
-    color: #fff;
-    text-decoration: none;
-    font: 13px;
-}
+    .nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font: 13px;
+    }
 
 }
 
