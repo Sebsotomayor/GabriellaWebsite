@@ -291,7 +291,7 @@ BELOW IS THE HEADER BACKGROUND!!!
 
 @media(max-width: 600px){
     .sub-header{
-        height: 25vh;
+        height: 20vh;
     }
     
     .sub-header h1{
@@ -330,6 +330,12 @@ BELOW IS THE HEADER BACKGROUND!!!
 .about-col h1{
     font-size: 50px;
     padding-top: 0;
+}
+
+@media(max-width: 600px){
+    .about-col h1{
+        font-size: 40px;
+    }
 }
 
 .about-col h4 {
