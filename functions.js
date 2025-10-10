@@ -26,3 +26,38 @@ document.querySelectorAll('.toggle-btn').forEach(button => {
     }
   });
 });
+
+
+document.querySelectorAll('.toggle-subtitle').forEach(h3 => {
+  h3.addEventListener('click', () => {
+    const p = h3.nextElementSibling;
+    if (p && p.classList.contains('subtitle-description')) {
+      p.classList.toggle('active');
+      h3.classList.toggle('open'); // keeps underline while open
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const images = document.querySelectorAll('.expandable-img');
+
+  // Create the overlay element once
+  const overlay = document.createElement('div');
+  overlay.classList.add('image-overlay');
+  const overlayImg = document.createElement('img');
+  overlay.appendChild(overlayImg);
+  document.body.appendChild(overlay);
+
+  // Click to open
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      overlayImg.src = img.src;
+      overlay.classList.add('active');
+    });
+  });
+
+  // Click overlay to close
+  overlay.addEventListener('click', () => {
+    overlay.classList.remove('active');
+  });
+});

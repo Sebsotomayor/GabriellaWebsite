@@ -10,15 +10,7 @@ i, em {
     font-style: italic;
 }
 
-  
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(32, 26, 63, 0.647),rgba(59, 65, 37, 0.548)),url(images/Flag_of_Colombia.svg.webp);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
+/* NAVIGATION BAR */
 nav{
     display: flex;
     padding: 2% 6%;
@@ -45,8 +37,6 @@ nav img{
     font: 13px;
 }
 
-/* COLOR FOR LINE UNDER LINKS */
-
 .nav-links ul li::after{
     content:'';
     width: 0%;
@@ -62,6 +52,16 @@ nav img{
 }
 
 /*HOME PAGE */
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(32, 26, 63, 0.647),rgba(59, 65, 37, 0.548)),url(images/Flag_of_Colombia.svg.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
 .text-box{
     width: 80%;
     color: #fff;
@@ -71,9 +71,11 @@ nav img{
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
 .text-box h1{
     font-size: 50px;
 }
+
 .text-box p{
     margin: 20px 0 40px;
     font-size: 20px;
@@ -84,7 +86,7 @@ nav img{
     width: 80%;
     color: #fff;
     position: absolute;
-    
+
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -103,6 +105,7 @@ nav img{
     position: relative;
     cursor: pointer;
 }
+
 .hero-btn:hover{
     border: 1px solid #fc7651;
     background: #fc7651;
@@ -113,52 +116,27 @@ nav .fa{
     display: none;
 }
 
-/* SIDE DISPLAY IF SMALL SCREEN*/
-/* @media(max-width: 1000px){
 
-    .text-box h1{
-        font-size: 50px;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links{
-        position: fixed;
-        background:#fc7651;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 0.5s;
-    }
-    nav .fa{
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-links ul{
-        padding: 30px;
-    }
-} */
 
 /* EXTRA SMALL SCREENS (phones ≤600px) */
 @media(max-width: 1000px){
-        .text-box h1{
+
+    .text-box h1{
         font-size: 45px;
     }
+
     .text-box p{
         font-size: 25px;
     }
+
     .about-col h1{
         font-size: 60px;
     }
+
     .about-col h4{
         font-size: 25px;
     }
+
     .hero-btn{
         font-size: 20px;
     }
@@ -201,35 +179,8 @@ nav .fa{
 }
 
 
-.about-col h1{
-    font-size: 36px;
-    font-weight: 600;
-    text-align: center;
-}
 
-.about-col p{
-    color: #696969;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 25px;
-    padding: 10px;
-    
-}
-
-.about-row{
-    margin-top: 1%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
- 
-}
-
-
-
-
-/* ABOUT ME SECTION
-BELOW IS THE HEADER BACKGROUND!!!
-*/
+/* SUB HEADER */
 
 .sub-header{
     height: 50vh;
@@ -268,6 +219,9 @@ BELOW IS THE HEADER BACKGROUND!!!
         font-size: 30px;
     }
 }
+
+/* ABOUT SECTION */
+
 .about-us{
     width: 80%;
     margin: auto;
@@ -286,6 +240,31 @@ BELOW IS THE HEADER BACKGROUND!!!
     margin: 0 auto;
     width: 50%;
 }
+
+.about-col h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about-col p{
+    color: #696969;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 10px;
+    
+}
+
+.about-row{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+ 
+}
+
+
 @media(max-width: 1000px){
     .about-col img {
     display: block;
@@ -332,11 +311,11 @@ BELOW IS THE HEADER BACKGROUND!!!
 
 
 
-h3{
+/* h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
-}
+} */
 
 .course-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
@@ -378,7 +357,7 @@ h3{
   max-width: 350px;
   min-width: 260px;
   height: auto;
-  background: #74e8ff9f;
+  background: #f4d8ae9f;
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
@@ -399,11 +378,34 @@ h3{
   cursor: pointer;
 }
 
-.portfolio-col h3 {
+
+
+.portfolio-col h1 {
+  font-weight: 800;
+  font-size: 1.7rem;
   text-align: center;
-  font-weight: 600;
-  margin: 10px 0;
+  margin: 12px 0;
+  line-height: 1.3;
 }
+
+.portfolio-col h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.portfolio-col p, 
+.portfolio-col ul {
+  text-align: left;
+  width: 90%;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
 
 @media (max-width: 768px) {
   .portfolio-col {
@@ -412,11 +414,95 @@ h3{
   }
 }
 
-/* Hide project descriptions on mobile */
-@media (max-width: 768px) {
-  .portfolio-col p {
-    display: none;
-  }
+
+/* Keep your left-align + width:100% for layout */
+.portfolio-col h3 {
+  text-align: left;
+  width: 100%;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+/* Clickable subtitle */
+.toggle-subtitle {
+  cursor: pointer;
+  text-decoration: none;                 /* default: no underline */
+  transition: color .25s ease, text-decoration-color .25s ease;
+}
+
+/* Underline only the text on hover or when open */
+.toggle-subtitle:hover,
+.toggle-subtitle.open {
+  color: #0077b6;                        /* optional */
+  text-decoration-line: underline;
+  text-decoration-color: #fc7651;        /* your accent color */
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;            /* space below text */
+  text-decoration-skip-ink: auto;        /* nicer around descenders */
+}
+
+/* Subtitle body (toggle target) */
+.subtitle-description {
+  display: none;
+  text-align: left;
+  width: 100%;
+  margin: 8px 0 12px;
+  line-height: 1.5;
+}
+
+.subtitle-description li {
+  margin-bottom: 10px; /* extra vertical spacing between bullets */
+}
+
+.subtitle-description.active { display: block; }
+
+/* Base description image styling */
+.desc-img {
+  display: block;
+  width: 90%;
+  max-width: 500px;
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for clickability */
+.desc-img:hover {
+  transform: scale(1.02); /* gentle lift */
+  box-shadow: 0 0 40px rgba(252, 118, 81, 0.6); /* soft orange glow */
+}
+
+/* Lightbox overlay */
+.image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+
+.image-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.image-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  cursor: zoom-out;
 }
 
 /* Hide descriptions initially */
@@ -503,12 +589,12 @@ h3{
   }
 }
 
-/* Hide project descriptions on mobile */
-@media (max-width: 768px) {
+/*TODO: Hide advocacy descriptions on mobile */
+/* @media (max-width: 768px) {
   .advocacy-col p {
     display: none;
   }
-}
+} */
 
 
 /* Ensure the whole middle section is centered */
@@ -541,4 +627,25 @@ h3{
   object-fit: contain;
   aspect-ratio: auto; /* lets iframe define its own natural ratio */
   display: block;
+}
+
+.local-video {
+  position: relative;
+  max-width: 700px;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background: #000;
+  aspect-ratio: auto; /* natural ratio */
+}
+
+/* Style the video element itself */
+.local-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+  border-radius: 12px;
+  object-fit: contain;
 }

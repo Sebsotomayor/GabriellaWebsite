@@ -1,110 +1,201 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- NAME OF WEBSITE RIGHT HERE!!!!!-->
+    <!-- Website title -->
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header Section -->
     <section class="sub-header">
-        <nav>
-            
-                <!-- CHANGE THE LOGO THAT LEADS TO HOME MENU LATER-->
+      <nav>
+        <a href="index.html">
+          <img src="images/rainbow-rose.png" alt="Logo" />
+        </a>
 
-            <a href="index.html"><img src="images/rainbow-rose.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT ME</a></li>
-                    <li><a href="portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="advocacy.html">ADVOCACY</a></li>
-              
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT ME</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="advocacy.html">ADVOCACY</a></li>
+          </ul>
+        </div>
 
-        <h1>Social Impact Portfolio</h1>
-   
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Social Impact Portfolio</h1>
     </section>
 
-    <!-- CONTENT -->
-   
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+      <h1>Introducing My Consulting for Social Impact Portfolio</h1>
+      <br />
+      <h4>
+        Through my consulting work with local nonprofits and social enterprises,
+        I help transform creative ideas into programs that make a real
+        difference. Below are a few examples of projects where I've turned
+        vision into impact.
+      </h4>
+      <br />
+      <i>~ My Services ~</i>
 
-    <!-- TODO -->
-<section class="portfolio">
-<h1>
-  Introducing My Consulting for Social Impact Portfolio
-</h1>
-  <br>
-  <h4>
-    Through my consulting work with local nonprofits and social enterprises, 
-    I help transform creative ideas into programs that make a real difference.
-    Below are a few examples of projects where I've turned vision into impact.
-  </h4>
+      <div class="portfolio-grid">
+        <!-- ===== CARD 1 ===== -->
+        <div class="portfolio-col">
+          <img src="images/bigbrain.png" alt="Strategic Planning" />
+          <h1>Strategic Planning</h1>
 
-  <div class="portfolio-grid">
-    <div class="portfolio-col">
-          <img src="images/Flag_of_Colombia.svg.webp" alt="Flag">
-          <h3>Strategic Planning</h3>
-          <h4>Subtitle 1</h4>
-          <h4>Subtitle 2</h4>
-          <br>
-          <p class="project-description">
-            DESCRIPTION OF PROJECT 1 GOES HERE. THIS IS A SAMPLE TEXT.
-            <br><br>
-          </p>
-          <button class="hero-btn red-btn toggle-btn">LEARN MORE</button>
+          <h3 class="toggle-subtitle">
+            Coach Lee's Afterschool Wellness Camp
+          </h3>
+          <ul class="subtitle-description">
+            <p>
+              As Program Supervisor, I led the strategic transformation of a
+              multi-school dance program, uniting staff, students, and families
+              under a mission of empowerment through dance.
+            </p>
+            <li>
+              Conducted a program needs assessment and identified major
+              communication and organizational challenges.
+            </li>
+            <li>Developed a mission and vision statement.</li>
+            <li>Built a program evaluation model.</li>
+            <li>
+              Implemented the redesigned curriculum, bringing strategic plans to
+              life for students and staff.
+            </li>
+            <img
+              class="desc-img expandable-img"
+              src="images/coachlee.png"
+              alt="Coach Lee Mission/Vision Statement"
+            />
+          </ul>
+
+          <h3 class="toggle-subtitle">Cortes Family Physicians</h3>
+          <ul class="subtitle-description">
+            <p>
+              Partnered with one of Manatee County's few independent primary
+              care practices to lead a strategic marketing and rebranding
+              initiative, bridging the clinic's trusted legacy of family-centered
+              care with its forward-looking vision in regenerative medicine.
+            </p>
+            <li>
+              Developed and implemented a marketing and rebranding plan to
+              expand community reach.
+            </li>
+            <li>
+              Initiated community partnerships and event collaborations to
+              strengthen visibility and engagement.
+            </li>
+            <li>
+              Revamped social media, creating content and videos to showcase
+              patient stories.
+            </li>
+            <li>
+              Redesigned the website, writing all content and shaping the brand's
+              visual identity.
+            </li>
+            <p>
+              <a href="https://cortesfamilyphysicians.com/">Website</a>
+              <br />
+              <a
+                href="https://www.instagram.com/cortesfamilyphysicians?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                >Instagram</a
+              >
+            </p>
+          </ul>
         </div>
 
-    <div class="portfolio-col">
-          <img src="images/Flag_of_Colombia.svg.webp" alt="Flag">
-          <h3>Program Development</h3>
-          <h4>Subtitle 1</h4>
-          <h4>Subtitle 2</h4>
-          <br>
-          <p class="project-description">
-            DESCRIPTION OF PROJECT 2 GOES HERE. THIS IS A SAMPLE TEXT.
-            <br><br>
-          </p>
-          <button class="hero-btn red-btn toggle-btn">LEARN MORE</button>
+        <!-- ===== CARD 2 ===== -->
+        <div class="portfolio-col">
+          <img src="images/teamworklightbulb.svg" alt="Program Development" />
+          <h1>Program Development</h1>
+
+          <h3 class="toggle-subtitle">Subtitle 1</h3>
+          <ul class="subtitle-description">
+            <p>DESCRIPTION OF SUBTITLE 1 GOES HERE. THIS IS A SAMPLE TEXT.</p>
+            <li>Bullet point 1</li>
+            <li>Bullet point 2</li>
+            <li>Bullet point 3</li>
+            <img
+              class="desc-img expandable-img"
+              src="images/brainlightbulbpt2.png"
+              alt="Program Development Example"
+            />
+          </ul>
+
+          <h3 class="toggle-subtitle">Subtitle 2</h3>
+          <ul class="subtitle-description">
+            <p>DESCRIPTION OF SUBTITLE 2 GOES HERE. THIS IS A SAMPLE TEXT.</p>
+            <li>Bullet point 1</li>
+            <li>Bullet point 2</li>
+            <li>Bullet point 3</li>
+            <img
+              class="desc-img expandable-img"
+              src="images/brainlightbulbpt2.png"
+              alt="Program Development Example"
+            />
+          </ul>
         </div>
 
-    <div class="portfolio-col">
-          <img src="images/Flag_of_Colombia.svg.webp" alt="Flag">
-          <h3>Fundraising</h3>
-          <h4>Subtitle 1</h4>
-          <h4>Subtitle 2</h4>
-          <br>
-          <p class="project-description">
-            DESCRIPTION OF PROJECT 3 GOES HERE. THIS IS A SAMPLE TEXT.
-            <br><br>
-          </p>
-          <button class="hero-btn red-btn toggle-btn">LEARN MORE</button>
+        <!-- ===== CARD 3 ===== -->
+        <div class="portfolio-col">
+          <img src="images/brainlightbulbpt2.png" alt="Fundraising" />
+          <h1>Fundraising</h1>
+
+          <h3 class="toggle-subtitle">Subtitle 1</h3>
+          <ul class="subtitle-description">
+            <p>DESCRIPTION OF SUBTITLE 1 GOES HERE. THIS IS A SAMPLE TEXT.</p>
+            <li>Bullet point 1</li>
+            <li>Bullet point 2</li>
+            <li>Bullet point 3</li>
+            <img
+              class="desc-img expandable-img"
+              src="images/brainlightbulbpt2.png"
+              alt="Fundraising Example"
+            />
+          </ul>
+
+          <h3 class="toggle-subtitle">Subtitle 2</h3>
+          <ul class="subtitle-description">
+            <p>DESCRIPTION OF SUBTITLE 2 GOES HERE. THIS IS A SAMPLE TEXT.</p>
+            <li>Bullet point 1</li>
+            <li>Bullet point 2</li>
+            <li>Bullet point 3</li>
+            <img
+              class="desc-img expandable-img"
+              src="images/brainlightbulbpt2.png"
+              alt="Fundraising Example"
+            />
+          </ul>
         </div>
+      </div>
+    </section>
 
-  </div>
-</section>
+    <div class="center-button">
+      <br />
+      <a href="advocacy.html" class="hero-btn red-btn">ADVOCACY</a>
+    </div>
 
-
-        <div class="center-button">
-            <br>
-            <a href="advocacy.html" class="hero-btn red-btn">ADVOCACY</a>
-         </div>
-
-
-     </section>
-
-    <!-- JavaScript for Toggle Menu -->
-<script src="functions.js"></script>
-
-</body>
+    <!-- JavaScript -->
+    <script src="functions.js"></script>
+  </body>
 </html>
