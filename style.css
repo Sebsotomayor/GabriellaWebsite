@@ -197,6 +197,23 @@ nav .fa{
     font-size: 50px;;
 
 }
+
+.sub-header-np{
+    height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/CommunityImg2.JPG);
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+    color: #FFF;
+}
+
+.sub-header-np h1{
+    margin-top: 0px;
+    font-size: 50px;;
+
+}
+
 @media(max-width: 1000px){
     .sub-header{
         height: 30vh;
@@ -206,6 +223,15 @@ nav .fa{
         margin-top: 0;
         font-size: 50px;
     }
+
+    .sub-header-np{
+        height: 40vh;
+    }
+
+    .sub-header-np .np{
+        font-size: 30px;
+    }
+
 }
 
 @media(max-width: 600px){
@@ -670,15 +696,6 @@ nav .fa{
     width: 80%;
 }
 
-.nonprofit p{
-    color: #696969;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 25px;
-    padding: 10px;
-    
-}
-
 @media(max-width: 1000px){
     .nonprofit-col img {
     display: block;
@@ -695,21 +712,28 @@ nav .fa{
     text-align: center;
 }
 
-.nonprofit-col h2{
-    font-size: 30px;
+.nonprofit-col h3{
+    font-size: 24px;
     padding-top: 0;
     font-weight: 300;
     text-align: center;
 }
 
-@media(max-width: 600px){
+@media(max-width: 1000px){
     .nonprofit-col h1{
         font-size: 40px;
     }
 
     .nonprofit-col h2{
-        font-size: 40px;
+        font-size: 20px;
     }
+
+    .nonprofit-col h3{
+    font-size: 15px;
+    padding-top: 0;
+    font-weight: 100;
+    text-align: center;
+}
 }
 
 .nonprofit-col h4 {
@@ -722,14 +746,63 @@ nav .fa{
 .nonprofit-col p{
     padding-top: 0;
     padding: 15px 0 25px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 10px;
+    color: #2e2e2e;
+    
+
 }
 
 @media(max-width: 1000px){
-    .nonprofit-col h1{
-        font-size: 60px;
-    }
+
 
     .nonprofit-col h4{
         font-size: 25px;
+    }  
+
+    .nonprofit-col p{
+        font-size: 15px;
     }
+}
+
+/* Centers the button inside its parent container */
+.center-button {
+  text-align: center;
+  margin: 20px auto;
+  width: 100%;
+  position: relative;
+  z-index: 2; /* keeps it above iframes */
+}
+
+/* Optional: if you want all hero-btns inside nonprofit-col to center */
+.nonprofit-col .hero-btn {
+  display: inline-block;
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+  z-index: 2; /* ensures it's clickable even near the iframe */
+}
+
+/* PDF button styling (inherits your hero-btn red-btn look) */
+.pdf-btn {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: #fc7651;  /* same red accent */
+  color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2; /* ensures button is on top */
+}
+
+.pdf-btn:hover {
+  background: #d64d28;  /* darker hover shade */
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
