@@ -241,12 +241,6 @@ nav .fa{
     width: 50%;
 }
 
-.about-col h1{
-    font-size: 36px;
-    font-weight: 600;
-    text-align: center;
-}
-
 .about-col p{
     color: #696969;
     font-size: 15px;
@@ -277,6 +271,8 @@ nav .fa{
 .about-col h1{
     font-size: 50px;
     padding-top: 0;
+    font-weight: 600;
+    text-align: center;
 }
 
 @media(max-width: 600px){
@@ -529,6 +525,18 @@ nav .fa{
   background: #d62828;
 }
 
+.coming-soon {
+  color: #d62828;           /* bright red */
+  font-weight: 600;
+  text-align: center !important; /* forces centering */
+  font-size: 1.1rem;
+  margin: 40px auto 20px auto;
+  letter-spacing: 0.5px;
+  width: 100%;               /* ensures full-width alignment */
+  display: block;            /* makes sure it's treated like a block element */
+}
+
+
 
 /* advocacy */
 .advocacy {
@@ -648,4 +656,80 @@ nav .fa{
   border: none;
   border-radius: 12px;
   object-fit: contain;
+}
+
+.nonprofit-col{
+    flex-basis: 47%;
+    padding: 30px 2px;
+  
+}
+
+.nonprofit-col img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.nonprofit p{
+    color: #696969;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 10px;
+    
+}
+
+@media(max-width: 1000px){
+    .nonprofit-col img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+}
+
+
+.nonprofit-col h1{
+    font-size: 50px;
+    padding-top: 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+.nonprofit-col h2{
+    font-size: 30px;
+    padding-top: 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media(max-width: 600px){
+    .nonprofit-col h1{
+        font-size: 40px;
+    }
+
+    .nonprofit-col h2{
+        font-size: 40px;
+    }
+}
+
+.nonprofit-col h4 {
+    font-size: 18px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+.nonprofit-col p{
+    padding-top: 0;
+    padding: 15px 0 25px;
+}
+
+@media(max-width: 1000px){
+    .nonprofit-col h1{
+        font-size: 60px;
+    }
+
+    .nonprofit-col h4{
+        font-size: 25px;
+    }
 }
