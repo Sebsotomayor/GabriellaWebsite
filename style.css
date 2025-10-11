@@ -345,12 +345,6 @@ nav .fa{
 
 
 
-.center-button{
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: center;
-}
 
 
 
@@ -755,6 +749,16 @@ nav .fa{
 
 }
 
+.nonprofit-col .SACE-PROGRAM-img{
+  width: 50%;
+}
+
+@media(max-width: 1000px){
+  .nonprofit-col .SACE-PROGRAM-img{
+  width: 70%;
+}
+}
+
 @media(max-width: 1000px){
 
 
@@ -769,12 +773,18 @@ nav .fa{
 
 /* Centers the button inside its parent container */
 .center-button {
-  text-align: center;
-  margin: 20px auto;
+  display: flex;               /* allows horizontal layout */
+  justify-content: center;     /* centers horizontally */
+  align-items: center;         /* aligns vertically in case of uneven height */
+  flex-wrap: wrap;             /* wraps nicely on smaller screens */
+  gap: 20px;                   /* even spacing between buttons */
+  margin: 20px auto;           /* top/bottom margin, centered container */
   width: 100%;
   position: relative;
-  z-index: 2; /* keeps it above iframes */
+  z-index: 2;                  /* ensures it stays above iframes or overlays */
+  text-align: center;          /* fallback for inline elements */
 }
+
 
 /* Optional: if you want all hero-btns inside nonprofit-col to center */
 .nonprofit-col .hero-btn {
