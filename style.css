@@ -176,9 +176,9 @@ nav .fa{
     padding: 30px;
   }
   .nav-links ul li {
-    text-align: center;
-    font-size: 20px;
-    padding: 10px;
+    text-align: left;
+    font-size: 15px;
+    padding: 15px;
   }
   .nav-links ul li a {
     color: #fff;
