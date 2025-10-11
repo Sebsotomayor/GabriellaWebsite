@@ -296,7 +296,7 @@ nav .fa{
     position: fixed;
     background: rgb(252, 118, 81);
     height: 100vh;
-    width: 100%;
+    width: 40%;
     top: 0;
     right: -100%;
     text-align: right;
@@ -310,9 +310,9 @@ nav .fa{
   }
   .sub-header .nav-links ul li {
     display: block;
-    text-align: center;
-    font-size: 30px;
-    padding: 30px;
+    text-align: right;
+    font-size: 20px;
+    padding: 15px;
     margin-left: 0;
   }
   .sub-header .nav-links ul li a {
