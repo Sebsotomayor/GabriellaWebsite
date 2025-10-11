@@ -280,6 +280,12 @@ nav .fa{
   .sub-header h2 {
     font-size: 40px;
   }
+   .sub-header .np {
+    font-size: 25px;
+  } 
+  .sub-header .npi{
+    font-size: 20px;
+  }
   .sub-header p {
     font-size: 18px;
   }
