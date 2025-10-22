@@ -6,6 +6,11 @@
     font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 i, em {
     font-style: italic;
 }
@@ -216,7 +221,7 @@ nav .fa{
 /* SUB HEADER */
 .sub-header {
   position: relative;
-  height: 30vh;
+  height: 40vh;
   width: 100%;
   background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/CommunityImg2.JPG);
   background-size: cover;
