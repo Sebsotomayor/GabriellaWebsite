@@ -1,13 +1,12 @@
         
         
         
-var navLinks = document.getElementById("navLinks");
     function showMenu(){
-        navLinks.style.left = "0";
+        navLinks.style.right = "0%";
     }
 
     function hideMenu(){
-        navLinks.style.left = "100%"
+        navLinks.style.right = "-40%"
     }
 
 // ===== Toggle project descriptions =====
