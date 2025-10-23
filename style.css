@@ -108,6 +108,24 @@ nav img {
     text-align: center;
 }
 
+/* Centers the button horizontally and places it toward the bottom */
+.center-button-home {
+  display: flex;
+  justify-content: center;     /* center horizontally */
+  align-items: center;         /* vertically align if multiple buttons */
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  position: absolute;          /* position relative to parent */
+  bottom: 10%;                 /* distance from bottom — adjust as needed */
+  left: 50%;
+  transform: translateX(-50%); /* keeps it horizontally centered */
+  z-index: 2;
+  text-align: center;
+
+
+}
+
 
 /* LINK IN TEXT IN HOME PAGE*/
 .hero-btn{
@@ -679,7 +697,7 @@ nav .fa{
   max-width: 350px;
   min-width: 260px;
   height: auto;
-  background: #f4d8ae9f;
+  background: #edbca5;
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
@@ -783,7 +801,7 @@ nav .fa{
   align-items: center;
 
 }
-
+/*e9a07e*/
 
 .advocacy-col img {
   width: 75%;
@@ -819,6 +837,12 @@ nav .fa{
   margin: 0 auto;
   text-align: center;
   padding-top: 50px;
+}
+
+.entertainment img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .instagram-video,
