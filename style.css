@@ -71,9 +71,10 @@ nav img {
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(32, 26, 63, 0.647),rgba(59, 65, 37, 0.548)),url(images/Flag_of_Colombia.svg.webp);
-    background-position: center;
-    background-size: cover;
+    background-image: url(images/homepage.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
     position: relative;
 }
 
@@ -653,6 +654,96 @@ nav .fa{
   display: block;            /* makes sure it's treated like a block element */
 }
 
+/*Entertainment*/
+.entertainment {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* entertainment Grid */
+.entertainment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* entertainment Card */
+.entertainment-col {
+  width: 100%;
+  max-width: 350px;
+  min-width: 260px;
+  height: auto;
+  background: #f4d8ae9f;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+
+.entertainment-col img {
+  width: 75%;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+.entertainment-col h1 {
+  font-weight: 800;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 12px 0;
+  line-height: 1.3;
+}
+
+.entertainment-col h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.entertainment-col p, 
+.entertainment-col ul {
+  text-align: left;
+  width: 90%;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+  .entertainment-col {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Keep your left-align + width:100% for layout */
+.entertainment-col h3 {
+  text-align: left;
+  width: 100%;
+  margin: 8px 0;
+  line-height: 1.4;
+}
 
 
 /* advocacy */
@@ -753,6 +844,29 @@ nav .fa{
   aspect-ratio: auto; /* lets iframe define its own natural ratio */
   display: block;
 }
+
+.instagram-video-two {
+  position: relative;
+  aspect-ratio: 9 / 16; /* Instagram Reels are vertical */
+  max-width: 400px;     /* narrower than YouTube for vertical aspect */
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background: #000;
+  overflow: hidden;
+}
+
+.instagram-video-two iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
 
 .local-video {
   position: relative;
