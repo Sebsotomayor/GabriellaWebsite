@@ -1,291 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Website title -->
-    <title>Portfolio</title>
+  <!-- Website title -->
+  <title>Portfolio</title>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet"
+  />
+  <link 
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
 
-  <body>
-    <!-- Header Section -->
-    <section class="sub-header">
-      <!-- NAV -->
-      <nav>
-        <a href="index.html"><img src="images/Invisible_square.png" /></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT ME</a></li>
-            <li><a href="nonprofit.html">NON-PROFIT</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="entertainment.html">ENTERTAINMENT</a></li>
-            <li><a href="advocacy.html">ADVOCACY</a></li>
-          </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-      </nav>
+<body>
 
-      <div class="overlay">
-        <h1>Social Impact Portfolio</h1>
+  <!-- Header Section -->
+  <section class="sub-header">
+
+    <!-- NAV -->
+    <nav>
+      <a href="index.html">
+        <img src="images/Invisible_square.png" />
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT ME</a></li>
+          <li><a href="nonprofit.html">NON-PROFIT</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="entertainment.html">ENTERTAINMENT</a></li>
+          <li><a href="advocacy.html">ADVOCACY</a></li>
+        </ul>
       </div>
-    </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio">
-      <h1>Introducing My Consulting for Social Impact Portfolio</h1>
-      <br />
-      <h4>
-        Through my consulting work with local nonprofits and social enterprises,
-        I help transform creative ideas into programs that make a real
-        difference. Below are a few examples of projects where I've turned
-        vision into impact.
-      </h4>
-      <br />
-      <i>~ My Services ~</i>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
 
-      <div class="portfolio-grid">
-        <!-- ===== CARD 1 ===== -->
-        <div class="portfolio-col">
-          <img src="images/bigbrain.png" alt="Strategic Planning" />
-          <h1>Strategic Planning</h1>
-
-          <h3 class="toggle-subtitle">
-            Coach Lee's Afterschool Wellness Camp
-          </h3>
-          <ul class="subtitle-description">
-            <li>
-              <p>
-                As Program Supervisor, I led the strategic transformation of a
-                multi-school dance program, uniting staff, students, and families
-                under a mission of empowerment through dance.
-              </p>
-            </li>
-            <li>
-              Conducted a program needs assessment and identified major
-              communication and organizational challenges.
-            </li>
-            <li>Developed a mission and vision statement.</li>
-            <li>Built a program evaluation model.</li>
-            <li>
-              Implemented the redesigned curriculum, bringing strategic plans to
-              life for students and staff.
-            </li>
-            <p>
-              <img
-                class="desc-img expandable-img"
-                src="images/coachlee.png"
-                alt="Coach Lee Mission/Vision Statement"
-              />
-            </p>
-          </ul>
-
-          <h3 class="toggle-subtitle">Cortes Family Physicians</h3>
-          <ul class="subtitle-description">
-            <li>
-              <p>
-                Partnered with one of Manatee County's few independent primary
-                care practices to lead a strategic marketing and rebranding
-                initiative, bridging the clinic's trusted legacy of
-                family-centered care with its forward-looking vision in
-                regenerative medicine.
-              </p>
-            </li>
-            <li>
-              Developed and implemented a marketing and rebranding plan to
-              expand community reach.
-            </li>
-            <li>
-              Initiated community partnerships and event collaborations to
-              strengthen visibility and engagement.
-            </li>
-            <li>
-              Revamped social media, creating content and videos to showcase
-              patient stories.
-            </li>
-            <li>
-              Redesigned the website, writing all content and shaping the brand's
-              visual identity.
-            </li>
-            <li>
-              <p>
-                <a href="https://cortesfamilyphysicians.com/">Website</a><br>
-                <a
-                  href="https://www.instagram.com/cortesfamilyphysicians?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                  >Instagram</a
-                >
-              </p>
-            </li>
-          </ul>
-
-          <h3 class="toggle-subtitle">Sembrando Arte, Cosechando Esperanzas</h3>
-          <ul class="subtitle-description">
-            <li>
-              <p>
-                Developed a comprehensive social venture business plan to guide
-                the launch and growth of my nonprofit initiative.
-              </p>
-            </li>
-            <li>
-              <a href="images/SACE;STRATEGICPLAN.pdf">Strategic Plan (PDF)</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- ===== CARD 2 ===== -->
-        <div class="portfolio-col">
-          <img src="images/teamworklightbulb.svg" alt="Program Development" />
-          <h1>Program Development</h1>
-
-          <h3 class="toggle-subtitle">Coach Lee's Afterschool Wellness Camp</h3>
-          <ul class="subtitle-description">
-            <li>
-              <p>
-                Stepped into the role of program director and implemented a strategic 
-                plan into a new curriculum training high school students to lead dance 
-                classes for younger participants.
-              </p>
-            </li>
-            <li>
-              Managed weekly communication and logistics for classes and competitions, 
-              coordinating between 5 schools and more than 30 families to ensure smooth 
-              operations and performance readiness.
-            </li>
-            <li>
-              Directed the artistic and logistical flow of the competition, including 
-              choreography for the opener and finale, cue calling, program, award coordination, 
-              empowerment workshop and post-performance interviews.
-            </li>
-            <li>
-              Conducted post-program evaluations and feedback analysis. 
-            </li>
-            <p>
-              <img
-                class="desc-img expandable-img"
-                src="images/coachleecompgroup.png"
-                alt="Competition picture"
-              />
-            </p>
-            <p>
-              <img
-                class="desc-img expandable-img"
-                src="images/coachleetestimonial.png"
-                alt="Coach Lee Testimonial"
-              />
-            </p>
-          </ul>
-
-          <h3 class="toggle-subtitle">
-            Healthy Teens: Holistic Sexual Health Curriculum
-          </h3>
-          <ul class="subtitle-description">
-            <li>
-              <p>
-                Following two years as a Teen Health Educator volunteer, during
-                which I raised $3,000 for teen health initiatives in marginalized
-                communities, I took on a leadership role to elevate and expand the
-                program's curriculum.
-              </p>
-            </li>
-            <li>
-              Co-created a comprehensive curriculum blending physical, emotional,
-              and mental health education.
-            </li>
-            <li>
-              Introduced a new module, “Considering Yourself,” promoting consent,
-              self-worth, and emotional resilience.
-            </li>
-            <li>
-              Expanded existing lessons on contraception and STDs to include
-              mental health and peer pressure awareness.
-            </li>
-            <li>
-              Served as Site Coordinator, leading and managing the team to
-              present and facilitate lessons that inspired open dialogue and
-              youth empowerment.
-            </li>
-            <li>
-              <a href="images/HealthyTeensSexualHealth.pdf">Sexual Health HTC</a>
-            </li>
-          </ul>
-
-          <h3 class="toggle-subtitle">Sembrando Arte, Cosechando Esperanzas</h3>
-          <ul class="subtitle-description">
-            <li>
-              <p>
-                Developed a culturally grounded curriculum using indigenous art
-                and healing practices to support youth and community resilience
-                after 11 adolescent suicides in 2023.
-              </p>
-            </li>
-            <a href="nonprofit.html#program">Go to Program</a>
-
-          </ul>
-        </div>
-
-        <!-- ===== CARD 3 ===== -->
-        <div class="portfolio-col">
-          <img src="images/heart-money.png" alt="Fundraising" />
-          <h1>Fundraising</h1>
-
-          <h3 class="toggle-subtitle">Sembrando Arte, Cosechando Esperanzas</h3>
-          <ul class="subtitle-description">
-            <li>
-              <p>
-                Raised $1,500 to fund the first cohort of program development
-                through a full-scale fundraising campaign.
-              </p>
-            </li>
-            <li>
-              Organized a traditional Colombian Christmas show in partnership
-              with local artists.
-            </li>
-            <li>
-              Collaborated with 10 restaurants to provide food for sales and
-              three businesses plus a local soccer team for auctions.
-            </li>
-            <li>
-              Launched a GoFundMe campaign with an organizational video along with
-              an acai bowl fundraiser.
-            </li>
-            <a href="nonprofit.html#fundraising">Go to Fundraising Section</a>
-
-          </ul>
-
-          <h3 class="toggle-subtitle">Manatee Community Foundation Grants Committee</h3>
-          <ul class="subtitle-description">
-            <li>
-              <p>
-                Served on a select grant review committee in Manatee County, helping direct significant 
-                funding to local nonprofits and gaining practical knowledge of what strengthens a winning 
-                grant application.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <div class="center-button">
-      <br />
-      <a href="entertainment.html" class="hero-btn red-btn">ENTERTAINMENT</a>
+    <div class="overlay">
+      <h1>Social Impact Portfolio</h1>
     </div>
 
-    <!-- JavaScript -->
-    <script src="functions.js"></script>
-  </body>
+  </section>
+
+
+  <!-- Portfolio Section -->
+  <section class="portfolio">
+
+    <h1>Introducing My Consulting for Social Impact Portfolio</h1>
+    <br />
+    <h4>
+      Through my consulting work with local nonprofits and social enterprises,
+      I help transform creative ideas into programs that make a real
+      difference. Below are a few examples of projects where I've turned
+      vision into impact.
+    </h4>
+    <br />
+    <i>~ My Services ~</i>
+
+
+    <div class="portfolio-grid">
+
+      <!-- ===== CARD 1 ===== -->
+      <div class="portfolio-col">
+
+        <img src="images/bigbrain.png" alt="Strategic Planning" />
+        <h1>Strategic Planning</h1>
+
+        <h3 class="toggle-subtitle">Coach Lee's Afterschool Wellness Camp</h3>
+        <ul class="subtitle-description">
+          <li>
+            <p>
+              As Program Supervisor, I led the strategic transformation of a
+              multi-school dance program, uniting staff, students, and families
+              under a mission of empowerment through dance.
+            </p>
+          </li>
+          <li>Conducted a program needs assessment and identified major communication and organizational challenges.</li>
+          <li>Developed a mission and vision statement.</li>
+          <li>Built a program evaluation model.</li>
+          <li>Implemented the redesigned curriculum, bringing strategic plans to life for students and staff.</li>
+          <p>
+            <img 
+              class="desc-img expandable-img"
+              src="images/coachlee.png"
+              alt="Coach Lee Mission/Vision Statement"
+            />
+          </p>
+        </ul>
+
+        <h3 class="toggle-subtitle">Cortes Family Physicians</h3>
+        <ul class="subtitle-description">
+          <li>
+            <p>
+              Partnered with one of Manatee County's few independent primary
+              care practices to lead a strategic marketing and rebranding
+              initiative, bridging the clinic's trusted legacy of
+              family-centered care with its forward-looking vision in
+              regenerative medicine.
+            </p>
+          </li>
+          <li>Developed and implemented a marketing and rebranding plan to expand community reach.</li>
+          <li>Initiated community partnerships and event collaborations to strengthen visibility and engagement.</li>
+          <li>Revamped social media, creating content and videos to showcase patient stories.</li>
+          <li>Redesigned the website, writing all content and shaping the brand's visual identity.</li>
+          <li>
+            <p>
+              <a href="https://cortesfamilyphysicians.com/">Website</a><br />
+              <a 
+                href="https://www.instagram.com/cortesfamilyphysicians?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              >Instagram</a>
+            </p>
+          </li>
+        </ul>
+
+        <h3 class="toggle-subtitle">Sembrando Arte, Cosechando Esperanzas</h3>
+        <ul class="subtitle-description">
+          <li>
+            <p>
+              Developed a comprehensive social venture business plan to guide
+              the launch and growth of my nonprofit initiative.
+            </p>
+          </li>
+          <p>
+            <a href="images/SACE;STRATEGICPLAN.pdf" class="tel-btn">Strategic Plan (PDF)</a>
+          </p>
+        </ul>
+
+      </div>
+
+
+      <!-- ===== CARD 2 ===== -->
+      <div class="portfolio-col">
+
+        <img src="images/teamworklightbulb.svg" alt="Program Development" />
+        <h1>Program Development</h1>
+
+        <h3 class="toggle-subtitle">Coach Lee's Afterschool Wellness Camp</h3>
+        <ul class="subtitle-description">
+          <li>
+            <p>
+              Stepped into the role of program director and implemented a strategic 
+              plan into a new curriculum training high school students to lead dance 
+              classes for younger participants.
+            </p>
+          </li>
+          <li>Managed weekly communication and logistics for classes and competitions, coordinating between 5 schools and more than 30 families to ensure smooth operations and performance readiness.</li>
+          <li>Directed the artistic and logistical flow of the competition, including choreography for the opener and finale, cue calling, program, award coordination, empowerment workshop and post-performance interviews.</li>
+          <li>Conducted post-program evaluations and feedback analysis.</li>
+          <p>
+            <img 
+              class="desc-img expandable-img"
+              src="images/coachleecompgroup.png"
+              alt="Competition picture"
+            />
+          </p>
+          <p>
+            <img 
+              class="desc-img expandable-img"
+              src="images/coachleetestimonial.png"
+              alt="Coach Lee Testimonial"
+            />
+          </p>
+        </ul>
+
+        <h3 class="toggle-subtitle">Healthy Teens: Holistic Sexual Health Curriculum</h3>
+        <ul class="subtitle-description">
+          <li>
+            <p>
+              Following two years as a Teen Health Educator volunteer, during
+              which I raised $3,000 for teen health initiatives in marginalized
+              communities, I took on a leadership role to elevate and expand the
+              program's curriculum.
+            </p>
+          </li>
+          <li>Co-created a comprehensive curriculum blending physical, emotional, and mental health education.</li>
+          <li>Introduced a new module, “Considering Yourself,” promoting consent, self-worth, and emotional resilience.</li>
+          <li>Expanded existing lessons on contraception and STDs to include mental health and peer pressure awareness.</li>
+          <li>Served as Site Coordinator, leading and managing the team to present and facilitate lessons that inspired open dialogue and youth empowerment.</li>
+          <p>
+            <a href="images/HealthyTeensSexualHealth.pdf" class="tel-btn">Sexual Health HTC</a>
+          </p>
+        </ul>
+
+        <h3 class="toggle-subtitle">Sembrando Arte, Cosechando Esperanzas</h3>
+        <ul class="subtitle-description">
+          <li>
+            <p>
+              Developed a culturally grounded curriculum using indigenous art
+              and healing practices to support youth and community resilience
+              after 11 adolescent suicides in 2023.
+            </p>
+          </li>
+          <a href="nonprofit.html#program" class="tel-btn">Go to Program</a>
+        </ul>
+
+      </div>
+
+
+      <!-- ===== CARD 3 ===== -->
+      <div class="portfolio-col">
+
+        <img src="images/heart-money.png" alt="Fundraising" />
+        <h1>Fundraising</h1>
+
+        <h3 class="toggle-subtitle">Sembrando Arte, Cosechando Esperanzas</h3>
+        <ul class="subtitle-description">
+          <li>
+            <p>
+              Raised $1,500 to fund the first cohort of program development
+              through a full-scale fundraising campaign.
+            </p>
+          </li>
+          <li>Organized a traditional Colombian Christmas show in partnership with local artists.</li>
+          <li>Collaborated with 10 restaurants to provide food for sales and three businesses plus a local soccer team for auctions.</li>
+          <li>Launched a GoFundMe campaign with an organizational video along with an acai bowl fundraiser.</li>
+          <a href="nonprofit.html#fundraising" class="tel-btn">Go to Fundraising Section</a>
+        </ul>
+
+        <h3 class="toggle-subtitle">Manatee Community Foundation Grants Committee</h3>
+        <ul class="subtitle-description">
+          <li>
+            <p>
+              Served on a select grant review committee in Manatee County, helping direct significant
+              funding to local nonprofits and gaining practical knowledge of what strengthens a winning
+              grant application.
+            </p>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+
+    <div class="center-button">
+      <a href="entertainment.html" class="transition-btn">ENTERTAINMENT</a>
+    </div>
+
+  </section>
+
+
+  <!-- JavaScript -->
+  <script src="functions.js"></script>
+
+</body>
 </html>
