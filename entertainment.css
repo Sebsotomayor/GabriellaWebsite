@@ -6,6 +6,7 @@
   margin: auto;
   text-align: center;
   padding-top: 100px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 768px) {
@@ -86,6 +87,7 @@
   margin-top: 12px;
   margin-bottom: 16px;
   line-height: 1.5;
+  color: #2e2e2e;
 }
 
 /* Mobile card sizing */
@@ -97,7 +99,7 @@
 }
 
 /* ==========================
-   TELEPORT BUTTON 
+   TELEPORT BUTTON (Shared Button Style)
 ========================== */
 .tel-btn {
   display: inline-block;

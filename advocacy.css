@@ -1,0 +1,25 @@
+
+/* advocacy */
+.advocacy {
+  width: 80%;
+  margin: auto;
+  /* text-align: center; */
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.advocacy h1{
+font-size: 40px;
+  padding-top: 0;
+  padding-bottom: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.advocacy p {
+  color: #2e2e2e;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+  padding: 15px 0 25px;
+}

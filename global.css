@@ -221,6 +221,28 @@ nav .fa {
 }
 
 
+.video-file {
+  position: relative;
+  max-width: 700px;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background: #000;
+  aspect-ratio: auto; /* natural ratio */
+}
+
+/* Style the video element itself */
+.video-file video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+
 /* ==========================
    PDF DOWNLOAD BUTTON
 ========================== */

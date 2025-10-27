@@ -72,13 +72,14 @@
 }
 
 .nonprofit p {
-  font-size: 20px;
-  font-weight: 300;
+
   color: #2e2e2e;
-  padding: 10px;
+  font-size: 15px;
+  font-weight: 300;
   line-height: 25px;
-  padding-top: 0;
-  padding-bottom: 25px;
+  padding: 15px 0 25px;
+
+
 }
 
 /* SACE Program Image */
