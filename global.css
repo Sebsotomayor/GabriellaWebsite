@@ -101,7 +101,7 @@ nav .fa {
 /* ==========================
    SUB HEADER MEDIA QUERIES
 ========================== */
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .sub-header {
     height: 30vh;
   }
@@ -173,7 +173,58 @@ nav .fa {
 }
 
 /* ==========================
-   BUTTONS
+   VIDEO EMBEDS
+========================== */
+.instagram-video,
+.facebook-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+  border-radius: 12px;
+  background: #000;
+  overflow: hidden;
+  min-height: 300px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.instagram-video iframe,
+.facebook-video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+  aspect-ratio: auto;
+}
+
+/* ==========================
+   PDF DOWNLOAD BUTTON
+========================== */
+.pdf-btn {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: #fc7651;
+  color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.pdf-btn:hover {
+  background: #d64d28;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* ==========================
+   TRANSITION BUTTON
 ========================== */
 .center-button {
   display: flex;
@@ -182,6 +233,7 @@ nav .fa {
   flex-wrap: wrap;
   gap: 20px;
   margin: 20px auto;
+  padding-top: 20px;
   position: relative;
   z-index: 2;
   text-align: center;

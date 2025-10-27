@@ -1,0 +1,115 @@
+/* ==========================
+   NAV (Nonprofit styling within Nav)
+========================== */
+.sub-header .nonprofit {
+  padding-bottom: 0%;
+}
+
+.sub-header .nonprofit-i {
+  padding-top: 0%;
+}
+
+@media (max-width: 1200px) {
+  .sub-header .nonprofit {
+    font-size: 22px;
+    padding-bottom: 0%;
+  }
+
+  .sub-header .nonprofit-i {
+    padding-top: 0%;
+    font-size: 18px;
+  }
+}
+
+/* ==========================
+   NON-PROFIT SECTION
+========================== */
+.nonprofit {
+  margin-top: 1%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-basis: 47%;
+  padding: 30px 2px;
+  width: 80%;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.nonprofit img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
+@media (max-width: 1000px) {
+  .nonprofit img {
+    width: 100%;
+  }
+}
+
+.nonprofit h1 {
+  font-size: 50px;
+  padding-top: 15%;
+  font-weight: 600;
+  text-align: center;
+}
+
+.nonprofit h3 {
+  font-size: 24px;
+  padding-top: 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+.nonprofit h4 {
+  font-size: 18px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.nonprofit p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #2e2e2e;
+  padding: 10px;
+  line-height: 25px;
+  padding-top: 0;
+  padding-bottom: 25px;
+}
+
+/* SACE Program Image */
+.nonprofit .SACE-PROGRAM-img {
+  width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .nonprofit .SACE-PROGRAM-img {
+    width: 70%;
+  }
+}
+
+/* Typography scaling for mobile */
+@media (max-width: 1000px) {
+  .nonprofit h1 {
+    font-size: 40px;
+  }
+
+  .nonprofit h2 {
+    font-size: 20px;
+  }
+
+  .nonprofit h3 {
+    font-size: 15px;
+    font-weight: 100;
+  }
+
+  .nonprofit h4 {
+    font-size: 25px;
+  }
+
+  .nonprofit p {
+    font-size: 15px;
+  }
+}
