@@ -198,6 +198,29 @@ nav .fa {
   aspect-ratio: auto;
 }
 
+.instagram-reels-video {
+  position: relative;
+  aspect-ratio: 9 / 16; /* Instagram Reels are vertical */
+  max-width: 400px;     /* narrower than YouTube for vertical aspect */
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background: #000;
+  overflow: hidden;
+}
+
+.instagram-reels-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+
 /* ==========================
    PDF DOWNLOAD BUTTON
 ========================== */
