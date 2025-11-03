@@ -111,11 +111,57 @@
         video and a mini açaí bowl fundraiser.
     </p>
 
-    <div class="center-button">
-      <a href="documents/SACE;FUNDRAISERBROCHURE.pdf" target="_blank" class="hero-btn red-btn pdf-btn">
-        View Fundraising Brochure (PDF)
-      </a>
+    <!-- ===== Slideshow Section ===== -->
+<div class="slideshow-container">
 
+  <!-- Slide 1 -->
+  <div class="slide fade">
+    <img src="images/SACE;FUNDRAISERBROCHURE-part-1.jpg" alt="Slide 1">
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide fade">
+    <img src="images/SACE;FUNDRAISERBROCHURE-part-2.jpg" alt="Slide 2">
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="slide fade">
+    <img src="images/brochure-pt3.jpg" alt="Slide 3">
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide fade">
+    <img src="images/Brochure-pt4.jpg" alt="Slide 4">
+  </div>
+
+  <!-- Slide 5 -->
+  <div class="slide fade">
+    <img src="images/SACE;FUNDRAISERBROCHURE-part-5.jpg" alt="Slide 5">
+  </div>
+
+  <!-- Slide 6 -->
+  <div class="slide fade">
+    <img src="images/SACE;FUNDRAISERBROCHURE-part-6.jpg" alt="Slide 6">
+  </div>
+
+  <!-- Navigation Arrows -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<!-- Dots below slideshow -->
+<div class="dots-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+
+    <div class="center-button">
       <a href="documents/SACE;FUNDRAISINGPROPOSAL.pdf" target="_blank" class="hero-btn red-btn pdf-btn">
         View Fundraising Proposal (PDF)
       </a>
@@ -130,6 +176,43 @@
 
   <!-- Scripts -->
   <script src="functions.js"></script>
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
 
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    const slides = document.getElementsByClassName("slide");
+    const dots = document.getElementsByClassName("dot");
+    
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+
+  // Auto slideshow every 5 seconds
+  setInterval(() => plusSlides(1), 5000);
+  </script>
+
+  
 </body>
 </html>
