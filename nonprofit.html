@@ -111,54 +111,43 @@
         video and a mini açaí bowl fundraiser.
     </p>
 
-    <!-- ===== Slideshow Section ===== -->
-<div class="slideshow-container">
-
-  <!-- Slide 1 -->
-  <div class="slide fade">
+<!-- ===== Slideshow Section ===== -->
+<div class="slideshow-container main-slideshow">
+  <div class="main-slide fade">
     <img src="images/SACE;FUNDRAISERBROCHURE-part-1.jpg" alt="Slide 1">
   </div>
-
-  <!-- Slide 2 -->
-  <div class="slide fade">
+  <div class="main-slide fade">
     <img src="images/SACE;FUNDRAISERBROCHURE-part-2.jpg" alt="Slide 2">
   </div>
-
-  <!-- Slide 3 -->
-  <div class="slide fade">
+  <div class="main-slide fade">
     <img src="images/brochure-pt3.jpg" alt="Slide 3">
   </div>
-
-  <!-- Slide 4 -->
-  <div class="slide fade">
+  <div class="main-slide fade">
     <img src="images/Brochure-pt4.jpg" alt="Slide 4">
   </div>
-
-  <!-- Slide 5 -->
-  <div class="slide fade">
+  <div class="main-slide fade">
     <img src="images/SACE;FUNDRAISERBROCHURE-part-5.jpg" alt="Slide 5">
   </div>
-
-  <!-- Slide 6 -->
-  <div class="slide fade">
+  <div class="main-slide fade">
     <img src="images/SACE;FUNDRAISERBROCHURE-part-6.jpg" alt="Slide 6">
   </div>
 
-  <!-- Navigation Arrows -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+  <a class="prev main-prev">&#10094;</a>
+  <a class="next main-next">&#10095;</a>
 </div>
 
-<!-- Dots below slideshow -->
-<div class="dots-container">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-  <span class="dot" onclick="currentSlide(6)"></span>
+<div class="dots-container main-dots">
+  <span class="dot" onclick="currentMainSlide(1)"></span>
+  <span class="dot" onclick="currentMainSlide(2)"></span>
+  <span class="dot" onclick="currentMainSlide(3)"></span>
+  <span class="dot" onclick="currentMainSlide(4)"></span>
+  <span class="dot" onclick="currentMainSlide(5)"></span>
+  <span class="dot" onclick="currentMainSlide(6)"></span>
 </div>
+
+
+
+
 
 
     <div class="center-button">
@@ -167,51 +156,174 @@
       </a>
     </div>
 
+    
+<h1>
+  Gallery
+</h1>
+
+<div class="gallery">
+  <div class="gallery-tabs">
+    <button class="tab active" data-cat="IC">Indigeneous Ceramics</button>
+    <button class="tab" data-cat="COC">Cosecha Offering Caminatas</button>
+    <button class="tab" data-cat="CF">Community Futbol</button>
+    <button class="tab" data-cat="SP">Symbolic Painting</button>
+    <button class="tab" data-cat="EPF">Planetarium Fieldtrip</button>
+  </div>
+
+  <div class="slideshow-container">
+    <!-- slides carry a data-cat; JS filters them -->
+
+    <!-- Indigeneous Ceramics -->
+    <div class="slide" data-cat="IC"><img src="images/IC1.jpg" alt=""></div>
+    <div class="slide" data-cat="IC"><img src="images/IC2.jpg" alt=""></div>
+    <div class="slide" data-cat="IC"><img src="images/IC3.jpg" alt=""></div>
+    <div class="slide" data-cat="IC"><img src="images/IC4.jpg" alt=""></div>
+    <div class="slide" data-cat="IC"><img src="images/IC5.jpg" alt=""></div>
+    <div class="slide" data-cat="IC"><img src="images/IC6.jpg" alt=""></div>
+    <div class="slide" data-cat="IC"><img src="images/IC7.jpg" alt=""></div>
+
+    <!-- Cosecha Offering Caminatas -->
+    <div class="slide" data-cat="COC"><img src="images/COC1.jpg" alt=""></div>
+    <div class="slide" data-cat="COC"><img src="images/COC2.jpg" alt=""></div>
+    <div class="slide" data-cat="COC"><img src="images/COC3.jpg" alt=""></div>
+    <div class="slide" data-cat="COC"><img src="images/COC4.jpg" alt=""></div>
+    <div class="slide" data-cat="COC"><img src="images/COC5.jpg" alt=""></div>
+
+    <!-- Community Futbol -->
+    <div class="slide" data-cat="CF"><img src="images/CF1.jpg" alt=""></div>
+    <div class="slide" data-cat="CF"><img src="images/CF2.jpg" alt=""></div>
+    <div class="slide" data-cat="CF"><img src="images/CF3.jpg" alt=""></div>
+    <div class="slide" data-cat="CF"><img src="images/CF4.jpg" alt=""></div>
+    <div class="slide" data-cat="CF"><img src="images/CF5.jpg" alt=""></div>
+    <div class="slide" data-cat="CF"><img src="images/CF6.jpg" alt=""></div>
+    <div class="slide" data-cat="CF"><img src="images/CF7.jpg" alt=""></div>
+
+    <!-- Symbolic Painting -->
+    <div class="slide" data-cat="SP"><img src="images/SP1.jpg" alt=""></div>
+    <div class="slide" data-cat="SP"><img src="images/SP2.jpg" alt=""></div>
+    <div class="slide" data-cat="SP"><img src="images/SP3.jpg" alt=""></div>
+    <div class="slide" data-cat="SP"><img src="images/SP4.jpg" alt=""></div>
+    <div class="slide" data-cat="SP"><img src="images/SP5.jpg" alt=""></div>
+    <div class="slide" data-cat="SP"><img src="images/SP6.jpg" alt=""></div>
+
+
+    <!-- Educational Planetarium Fieldtrip -->
+    <div class="slide" data-cat="EPF"><img src="images/EPF1.jpg" alt=""></div>
+    <div class="slide" data-cat="EPF"><img src="images/EPF2.jpg" alt=""></div>
+    <div class="slide" data-cat="EPF"><img src="images/EPF3.jpg" alt=""></div>
+    <div class="slide" data-cat="EPF"><img src="images/EPF4.jpg" alt=""></div>
+    <div class="slide" data-cat="EPF"><img src="images/EPF5.jpg" alt=""></div>
+
+
+</div>
+
+  <!-- Prev/Next buttons -->
+  <div class="gallery-controls">
+    <button class="gallery-prev-btn">&#10094; Prev</button>
+    <button class="gallery-next-btn">Next &#10095;</button>
+  </div>
+
+
     <!-- Navigation Button -->
     <div class="center-button">
       <a href="portfolio.html" class="transition-btn">PORTFOLIO</a>
     </div>
+
+
+    
+    
 
   </section>
 
   <!-- Scripts -->
   <script src="functions.js"></script>
   <script>
-  let slideIndex = 1;
-  showSlides(slideIndex);
 
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
+  // ========== MAIN FUNDRAISER SLIDESHOW ==========
+  let mainIndex = 1;
+  showMainSlides(mainIndex);
+
+  function plusMainSlides(n) { showMainSlides(mainIndex += n); }
+  function currentMainSlide(n) { showMainSlides(mainIndex = n); }
+
+  function showMainSlides(n) {
+    const slides = document.querySelectorAll(".main-slide");
+    const dots = document.querySelectorAll(".main-dots .dot");
+    if (n > slides.length) { mainIndex = 1; }
+    if (n < 1) { mainIndex = slides.length; }
+
+    slides.forEach(s => s.style.display = "none");
+    dots.forEach(d => d.classList.remove("active"));
+
+    slides[mainIndex - 1].style.display = "block";
+    dots[mainIndex - 1].classList.add("active");
   }
 
-  // Thumbnail controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
+  document.querySelector(".main-prev").onclick = () => plusMainSlides(-1);
+  document.querySelector(".main-next").onclick = () => plusMainSlides(1);
 
-  function showSlides(n) {
-    const slides = document.getElementsByClassName("slide");
-    const dots = document.getElementsByClassName("dot");
-    
-    if (n > slides.length) { slideIndex = 1; }
-    if (n < 1) { slideIndex = slides.length; }
-
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-
-    for (let i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-  }
-
-  // Auto slideshow every 5 seconds
-  setInterval(() => plusSlides(1), 5000);
+  // Optional auto-play
+  setInterval(() => plusMainSlides(1), 5000);
   </script>
+
+  <script>
+  // ========== GALLERY SLIDESHOW ==========
+  document.addEventListener("DOMContentLoaded", () => {
+    const gallery = document.querySelector(".gallery");
+    if (!gallery) return;
+
+    const tabs = gallery.querySelectorAll(".tab");
+    const slides = gallery.querySelectorAll(".slide");
+    const prevBtn = gallery.querySelector(".gallery-prev-btn");
+    const nextBtn = gallery.querySelector(".gallery-next-btn");
+
+    let activeCategory = "IC";
+    let slideIndex = 1;
+
+    function showSlides(n) {
+      const visibleSlides = Array.from(slides).filter(
+        (s) => s.dataset.cat === activeCategory
+      );
+      if (visibleSlides.length === 0) return;
+
+      if (n > visibleSlides.length) slideIndex = 1;
+      if (n < 1) slideIndex = visibleSlides.length;
+
+      // hide all slides in the gallery
+      slides.forEach((s) => (s.style.display = "none"));
+      // show only the current one in the active category
+      visibleSlides[slideIndex - 1].style.display = "block";
+    }
+
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    // Attach bottom button controls if present
+    if (prevBtn) prevBtn.onclick = () => plusSlides(-1);
+    if (nextBtn) nextBtn.onclick = () => plusSlides(1);
+
+    // Tabs: switch category and jump to first slide
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        tabs.forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
+        activeCategory = tab.dataset.cat;
+        slideIndex = 1;           // reset to first slide on tab click
+        showSlides(slideIndex);
+      });
+    });
+
+    // Initialize
+    showSlides(slideIndex);
+  });
+</script>
+
+
 
   
 </body>
