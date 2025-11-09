@@ -238,35 +238,6 @@
   <!-- Scripts -->
   <script src="functions.js"></script>
   <script>
-
-  // ========== MAIN FUNDRAISER SLIDESHOW ==========
-  let mainIndex = 1;
-  showMainSlides(mainIndex);
-
-  function plusMainSlides(n) { showMainSlides(mainIndex += n); }
-  function currentMainSlide(n) { showMainSlides(mainIndex = n); }
-
-  function showMainSlides(n) {
-    const slides = document.querySelectorAll(".main-slide");
-    const dots = document.querySelectorAll(".main-dots .dot");
-    if (n > slides.length) { mainIndex = 1; }
-    if (n < 1) { mainIndex = slides.length; }
-
-    slides.forEach(s => s.style.display = "none");
-    dots.forEach(d => d.classList.remove("active"));
-
-    slides[mainIndex - 1].style.display = "block";
-    dots[mainIndex - 1].classList.add("active");
-  }
-
-  document.querySelector(".main-prev").onclick = () => plusMainSlides(-1);
-  document.querySelector(".main-next").onclick = () => plusMainSlides(1);
-
-  // Optional auto-play
-  setInterval(() => plusMainSlides(1), 5000);
-  </script>
-
-  <script>
   // ========== GALLERY SLIDESHOW ==========
   document.addEventListener("DOMContentLoaded", () => {
     const gallery = document.querySelector(".gallery");

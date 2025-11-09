@@ -33,7 +33,7 @@ em {
   gap: 20px;
   width: 100%;
   position: absolute;           /* position relative to parent */
-  bottom: 10%;                  /* distance from bottom — adjust as needed */
+  bottom: 10%;                  /* distance from bottom */
   left: 50%;
   transform: translateX(-50%);  /* keeps it horizontally centered */
   z-index: 2;
@@ -48,7 +48,7 @@ em {
   font-size: 1rem;
   padding: 12px 22px;
   border-radius: 10px;
-  background: #fc7651;          /* same red accent */
+  background: #fc7651;          
   color: white;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
@@ -57,7 +57,7 @@ em {
 }
 
 .home-btn:hover {
-  background: #d64d28;          /* darker hover shade */
+  background: #d64d28;          
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   transition: 1s;
