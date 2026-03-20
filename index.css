@@ -26,6 +26,10 @@ body {
   font-weight: 600;
 }
 
+.nav-left img{
+    height: 100px;
+}
+
 .nav-right a {
   margin-left: 20px;
   text-decoration: none;
@@ -50,7 +54,7 @@ HERO SECTION
   flex: 1;
   display: flex;
   flex-direction: column; /* 🔥 stacks everything vertically */
-  align-items: center; /* keeps buttons left-aligned */
+  align-items: center; /* keeps buttons centered */
 }
 
 .hero-text h1 {
