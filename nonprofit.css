@@ -92,6 +92,7 @@ body {
   padding: 40px 60px;
   max-width: 1100px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .project-overview h2 {
@@ -109,7 +110,7 @@ body {
   max-width: 100%;
   max-height: 280px;
   object-fit: contain;
-    cursor: pointer;
+  cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
