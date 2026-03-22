@@ -70,7 +70,37 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
+/* Make cards feel clickable */
+.video-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
 
+/* Lift effect */
+.video-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Overlay container */
+.video-wrapper {
+  position: relative;
+}
+
+/* Dark overlay */
+.video-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  transition: background 0.3s ease;
+  pointer-events: none;
+}
+
+/* Darken on hover */
+.video-card:hover .video-wrapper::after {
+  background: rgba(0,0,0,0.25);
+}
 .intro-img:hover {
   transform: scale(1.02);
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);

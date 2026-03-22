@@ -186,16 +186,6 @@ body {
   border-radius: 8px;
 }
 
-/* SECTION DESCRIPTION */
-.section-description {
-  max-width: 800px;
-  margin: 0 auto 40px;
-  text-align: center;
-  font-size: 1rem;
-    line-height: 1.6;
-}
-
-/* VIDEO CARD */
 /* Make cards feel clickable */
 .video-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -208,13 +198,10 @@ body {
   box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
+/* Overlay container */
 .video-wrapper {
   position: relative;
-  width: 100%;
-  padding-bottom: 140%; /* vertical reel ratio */
-  overflow: hidden;
 }
-
 
 /* Dark overlay */
 .video-wrapper::after {
@@ -229,6 +216,23 @@ body {
 /* Darken on hover */
 .video-card:hover .video-wrapper::after {
   background: rgba(0,0,0,0.25);
+}
+
+/* SECTION DESCRIPTION */
+.section-description {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* VIDEO CARD */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 140%; /* vertical reel ratio */
+  overflow: hidden;
 }
 
 .project-card h3{
@@ -292,28 +296,6 @@ text-align: center;
 
 .cta p {
   margin-bottom: 20px;
-}
-
-/* 2 COLUMN GRID */
-.advocacy-grid {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-/* VIDEO WRAPPER (YOUTUBE STYLE) */
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 ratio */
-  overflow: hidden;
-}
-
-.video-wrapper iframe,
-.video-wrapper video {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: none;
-  object-fit: cover;
 }
 
 /* =========================

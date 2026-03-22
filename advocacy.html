@@ -1,113 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advocacy | Gabriella Cortes-Alban</title>
 
-    <!-- NAME OF WEBSITE RIGHT HERE!!!!!-->
-    <title>Advocacy</title>
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="advocacy.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Reuse SAME CSS -->
+  <link rel="stylesheet" href="advocacy.css">
 </head>
-<body>
-    <section class="sub-header">
-        <!-- NAV -->
-        <nav>
-            <a href="index.html"><img src="images/Invisible_square.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT ME</a></li>
-                    <li><a href="oldNonprofit.html">NON-PROFIT</a></li>
-                    <li><a href="oldPortfolio.html">PORTFOLIO</a></li>
-                    <li><a href="oldEntertainment.html">ENTERTAINMENT</a></li>
-                    <li><a href="advocacy.html">ADVOCACY</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
 
-        <div class="overlay">
-            <h1>Advocacy</h1>
-        </div>
-   
-    </section>
+<body class="subpage">
 
-    <section class="advocacy">
-        <h1>
-            Advocacy through Public Communications
-        </h1>
-        <p>
-            Gabriella Cortes-Alban is a communicator and advocate dedicated to using her voice 
-            to inspire dialogue around equity, and community empowerment. Drawing on her interdisciplinary 
-            research, she explores today's most pressing issues from multiple angles, seeing how systems can 
-            work together rather than apart.
-            Grounded in both experience and academia, Gabriella shares this perspective through peer education, 
-            storytelling, and public speaking. She actively engages in community discussions and is launching a 
-            podcast that explores how the arts, education, and social innovation intersect to create meaningful change.
-
-    </p>
-
-        
-
-        <!-- Facebook Video -->
-        <div class="facebook-video">
-        <iframe
-            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F100048518269852%2Fvideos%2F1907294330019025%2F&show_text=false&width=560"
-            scrolling="no"
-            frameborder="0"
-            allowfullscreen="true"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-        </iframe>
-        </div>
-
-        <!-- Instagram vid 1 -->
-        <div class="instagram-video">
-        <iframe
-            src="https://www.instagram.com/reel/CwihYZwt38F/embed/?cr=0&v=14&wp=0&rd=https://www.instagram.com"
-            frameborder="0"
-            allowfullscreen
-            scrolling="no"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-        </iframe>
-        </div>
-
-        <!-- Instagram vid 2 -->
-        <div class="instagram-video">
-        <iframe
-            src="https://www.instagram.com/reel/CwnsZRvPhUD/embed/?cr=0&v=14&wp=0&rd=https://www.instagram.com"
-            frameborder="0"
-            allowfullscreen
-            scrolling="no"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-        </iframe>
-        </div>
-        
-        <div class="video-file">
-            <video controls playsinline>
-            <source src="videos/Gaby-health-champ.mp4" type="video/mp4">
-        </video>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="images/GCoral_Enterprises_1.png" alt="Home">
+      </a>
     </div>
 
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="nonprofit.html">Nonprofit</a>
+      <a href="entertainment.html">Entertainment</a>
+      <a href="advocacy.html">Advocacy</a>
+    </div>
+  </nav>
 
+  <!-- HERO -->
+  <section class="portfolio-hero">
+    <h1>Advocacy through Public Communications</h1>
+  </section>
 
+  <!-- =========================
+        MAIN SECTION
+  ========================= -->
+  <section class="portfolio-section">
 
+    <p class="section-description">
+      Gabriella Cortes-Alban is a communicator and advocate dedicated to using her voice 
+      to inspire dialogue around equity and community empowerment. Drawing on her interdisciplinary 
+      research, she explores today's most pressing issues from multiple angles, seeing how systems 
+      can work together rather than apart.
+      <br><br>
+      Grounded in both experience and academia, Gabriella shares this perspective through peer 
+      education, storytelling, and public speaking. She actively engages in community discussions 
+      and is launching a podcast exploring how the arts, education, and social innovation intersect 
+      to create meaningful change.
+    </p>
 
+    <div class="portfolio-grid advocacy-grid">
 
-    </section>
+      <!-- Facebook Video -->
+      <div class="project-card video-card">
+        <!-- <h3>Video Title Here</h3> -->
+        <div class="video-wrapper wide">
+          <iframe
+            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F100048518269852%2Fvideos%2F1907294330019025%2F&show_text=false"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
 
+      <!-- Instagram 1 -->
+      <div class="project-card video-card">
+        <!-- <h3>Video Title Here</h3> -->
+        <div class="video-wrapper wide">
+          <iframe src="https://www.instagram.com/reel/CwihYZwt38F/embed/" allowfullscreen></iframe>
+        </div>
+      </div>
 
+      <!-- Instagram 2 -->
+      <div class="project-card video-card">
+        <!-- <h3>Video Title Here</h3> -->
+        <div class="video-wrapper wide">
+          <iframe src="https://www.instagram.com/reel/CwnsZRvPhUD/embed/" allowfullscreen></iframe>
+        </div>
+      </div>
 
+      <!-- Local Video -->
+      <div class="project-card video-card">
+        <!-- <h3>Video Title Here</h3> -->
+        <div class="video-wrapper wide">
+          <video controls>
+            <source src="videos/Gaby-health-champ.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
 
+    </div>
 
+  </section>
 
-    <!-- JavaScript for Toggle Menu -->
-<script src="functions.js"></script>
-
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>My Socials</p>
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
 
 </body>
 </html>

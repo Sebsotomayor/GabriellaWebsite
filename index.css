@@ -37,6 +37,32 @@ body {
   font-size: 0.95rem;
 }
 
+.nav-right a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  position: relative;
+}
+
+/* underline animation */
+.nav-right a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #fc7651;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-right a:hover::after {
+  width: 100%;
+}
+
+
 /* =========================
 HERO SECTION
 ========================= */
