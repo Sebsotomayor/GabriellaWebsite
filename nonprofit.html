@@ -22,9 +22,14 @@
       </a>
     </div>
 
-    <div class="nav-right">
+    <div class="menu-toggle" id="menuToggle">
+      ☰
+    </div>
+
+    <div class="nav-right" id="navLinks">
+        <div class="close-btn" id="closeMenu">✕</div>
       <a href="index.html">Home</a>
-      <a href="portfolio.html">Portfolio</a>
+      <a href="portfolio.html"> Portfolio</a>
       <a href="nonprofit.html">Nonprofit</a>
       <a href="entertainment.html">Entertainment</a>
       <a href="advocacy.html">Advocacy</a>
@@ -320,8 +325,7 @@
 function closeModal() {
   document.getElementById('fullscreenModal').style.display = "none";
 }
-    </script>
-    <script>
+    // SEPARATE 
         let mainSlideIndex = 1;
         showMainSlides(mainSlideIndex);
 
@@ -351,5 +355,6 @@ function closeModal() {
     <div id="fullscreenModal" class="modal" onclick="closeModal()">
     <img id="modalImage">
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

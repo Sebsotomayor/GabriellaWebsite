@@ -18,6 +18,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
+  position: relative;
 }
 
 .subpage .navbar {
@@ -65,6 +66,77 @@ body {
 
 .nav-right a:hover::after {
   width: 100%;
+}
+
+/* =========================
+   MOBILE NAV
+========================= */
+
+/* Hide hamburger on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+  .close-btn {
+    display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  
+  .menu-toggle {
+    display: block;
+  }
+
+.nav-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background: #fc7651;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+
+  z-index: 1000;
+}
+
+.nav-right a {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: white;
+}
+
+  /* When menu is open */
+    .nav-right.active {
+    transform: translateX(0);
+    }
+
+    .navbar {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    margin-left: auto;
+  }
+
+  .close-btn {
+    display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+}
 }
 
 
@@ -364,6 +436,12 @@ body {
   grid-template-columns: repeat(2, minmax(0, 480px));
   justify-content: center;
   gap: 50px;
+}
+@media (max-width: 768px) {
+  .overview-grid {
+    grid-template-columns: 1fr;
+    gap: 30px; /* optional: tighter spacing for mobile */
+  }
 }
 
 .project-overview {
@@ -813,6 +891,11 @@ body {
 
 .advocacy-grid {
   grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 768px) {
+  .advocacy-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* VIDEO WRAPPER (YOUTUBE STYLE) */
