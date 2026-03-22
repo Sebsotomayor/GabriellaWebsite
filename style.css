@@ -27,25 +27,31 @@ body {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-
 .nav-left {
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-.nav-left img{
-    height: 100px;
+.nav-left img {
+  height: 100px;
+}
+
+/* DESKTOP DEFAULT */
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  position: static;
+  transform: none;
+  width: auto;
+  height: auto;
+  background: transparent;
+  z-index: auto;
 }
 
 .nav-right a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: black;
-  font-size: 0.95rem;
-}
-
-.nav-right a {
-  margin-left: 20px;
+  margin-left: 0;
   text-decoration: none;
   color: black;
   font-size: 1rem;
@@ -71,75 +77,65 @@ body {
 /* =========================
    MOBILE NAV
 ========================= */
-
-/* Hide hamburger on desktop */
 .menu-toggle {
   display: none;
   font-size: 2rem;
   cursor: pointer;
 }
 
-  .close-btn {
-    display: none;
+.close-btn {
+  display: none;
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
-  
   .menu-toggle {
     display: block;
-  }
-
-.nav-right {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 250px;
-  background: #fc7651;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
-
-  z-index: 1000;
-}
-
-.nav-right a {
-  margin: 20px 0;
-  font-size: 1.2rem;
-  color: white;
-}
-
-  /* When menu is open */
-    .nav-right.active {
-    transform: translateX(0);
-    }
-
-    .navbar {
-    flex-wrap: wrap;
-  }
-
-  .menu-toggle {
     margin-left: auto;
   }
 
+  .nav-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background: #fc7651;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+
+    transform: translateX(100%);
+    z-index: 1000;
+  }
+
+  .nav-right.active {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-right a {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .navbar {
+    flex-wrap: nowrap;
+  }
+
   .close-btn {
     display: block;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+  }
 }
-}
-
-
 /* =========================
     HERO SECTION (index)
 ========================= */
