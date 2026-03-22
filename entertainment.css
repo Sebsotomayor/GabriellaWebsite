@@ -228,18 +228,15 @@ body {
 }
 
 /* VIDEO CARD */
-.video-wrapper {
+.reels-wrapper {
   position: relative;
   width: 100%;
   padding-bottom: 140%; /* vertical reel ratio */
   overflow: hidden;
+  cursor: pointer;
 }
 
-.project-card h3{
-text-align: center;
-}
-
-.video-wrapper iframe {
+.reels-wrapper iframe {
   position: absolute;
   width: 100%;
   height: 100%;
