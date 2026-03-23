@@ -18,7 +18,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
 .subpage .navbar {
@@ -124,6 +126,7 @@ body {
 
   .navbar {
     flex-wrap: nowrap;
+    z-index:9999;
   }
 
   .close-btn {
@@ -835,7 +838,9 @@ body {
 }
 
 .button-center {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 /* =========================
